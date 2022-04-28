@@ -25,9 +25,6 @@ function transform(arr) {
     if(arr[i] != '--discard-next' && arr[i] != '--discard-prev' && arr[i] != '--double-next' && arr[i] != '--double-prev'){
       res.push(arr[i])
     }
-    /* if(typeof(arr[i]) === 'number'){
-      res.push(arr[i])
-    } */
     else if(arr[i] === '--discard-next'){
       if(i === arr.length - 1){
         continue
