@@ -25,7 +25,7 @@ class VigenereCipheringMachine {
   }
   encrypt(str, keyWord) {
     if(str === undefined || keyWord === undefined){
-      throw new NotImplementedError('Incorrect arguments!');
+      throw new Error('Incorrect arguments!');
     }
 
     let alpha = []
@@ -81,7 +81,7 @@ class VigenereCipheringMachine {
   }
   decrypt(str, keyWord) {
     if(str === undefined || keyWord === undefined){
-      throw new NotImplementedError('Incorrect arguments!');
+      throw new Error('Incorrect arguments!');
     }
     let alpha = []
 
